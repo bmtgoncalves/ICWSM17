@@ -2624,24 +2624,6 @@
 12893 -28.5809958 29.7498426
 12896 33.6562701 -101.8209749
 12945 37.8393332 -84.2700179
-Pw = Counter(edges.values())
-Pw = list(Pw.items())
-Pw = np.array(Pw)
-Pw.sort(key=lambda x:x[0])
-airport_list = airports.keys()
-airports = {}
-ax.loglog(Pw.T[0], Pw.T[1], 'r-')
-edges = {}
-fig, ax = plt.subplots()
-for airport_i in airport_list:
-for line in open("airport_gps.dat"):
-for line in open("flights/4567008_T_T100D_MARKET_ALL_CARRIER.csv"):
-from collections import Counter
-from geopy import distance
-import matplotlib.pyplot as plt
-import numpy as np
-line_count = 0
-plt.savefig('Pw.png')
 10018 58.3593043 -134.5839225
 10060 57.4965954 -134.5697093
 10090 44.6372222 -63.5022222
